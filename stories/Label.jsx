@@ -1,6 +1,6 @@
 import React from 'react'
-import { storiesOf, action } from '@kadira/storybook'
-import Label from '../lib/Label'
+import { storiesOf } from '@kadira/storybook'
+import { Label } from '../'
 import types from './types'
 
 storiesOf('Label', module)

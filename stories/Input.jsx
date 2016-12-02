@@ -1,6 +1,6 @@
 import React from 'react'
-import { storiesOf, action } from '@kadira/storybook'
-import Input from '../lib/Input'
+import { storiesOf } from '@kadira/storybook'
+import { Input } from '../'
 
 
 storiesOf('Input', module)
