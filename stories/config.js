@@ -15,4 +15,5 @@ configure(() => {
   require('./Button.jsx')
   require('./Input.jsx')
   require('./Label.jsx')
+  require('./TextArea.jsx')
 }, module)
