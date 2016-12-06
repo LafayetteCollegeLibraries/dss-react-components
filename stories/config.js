@@ -16,4 +16,5 @@ configure(() => {
   require('./Input.jsx')
   require('./Label.jsx')
   require('./TextArea.jsx')
+  require('./Toggle.jsx')
 }, module)
