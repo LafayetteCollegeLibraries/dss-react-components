@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { storiesOf, action } from '@kadira/storybook'
-import Toggle, { Group, Option } from '../lib/Toggle'
+import { Toggle } from '../'
 
 const Example = styled.div`margin-bottom:1em;`
 const values = {
@@ -33,10 +33,10 @@ storiesOf('Toggle', module)
     </div>
   ))
   .add('built out from Group + Option', () => (
-    <Group name="toggle-name" onChange={action('change!')} value="third value">
-      <Option key="opt-1" label="1st" value="first value" />
-      <Option key="opt-2" label="2nd" value="second value" />
-      <Option key="opt-3" label="3rd" value="third value" />
-    </Group>
+    <Toggle.Group name="toggle-name" onChange={action('change!')} value="third value">
+      <Toggle.Option key="opt-1" label="1st" value="first value" />
+      <Toggle.Option key="opt-2" label="2nd" value="second value" />
+      <Toggle.Option key="opt-3" label="3rd" value="third value" />
+    </Toggle.Group>
   ))
 
