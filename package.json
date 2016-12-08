@@ -16,6 +16,7 @@
   "dependencies": {
     "object-assign": "^4.1.0",
     "react": "^15.4.1",
+    "react-modal": "^1.6.1",
     "styled-components": "^1.1.2"
   },
   "devDependencies": {
