@@ -9,7 +9,7 @@ storiesOf('Label', module)
       {types.map((t, i) => {
         return (
           <div key={i}>
-            <Label type={t}>type="{t}"</Label>
+            <Label color={t}>color="{t}"</Label>
           </div>
         )
       })}

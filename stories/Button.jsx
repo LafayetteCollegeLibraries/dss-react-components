@@ -8,27 +8,32 @@ storiesOf('Button', module)
     <div>
       {types.map((t, i) => (
         <div key={i}>
-          <Button type={t}>type="{t}"</Button>
+          <Button color={t}>color="{t}"</Button>
         </div>
       ))}
-
-      <div key={types.length}>
-        <Button type="text">type="text"</Button>
-      </div>
+    </div>
+  ))
+  .add('all the types, link={true}', () => (
+    <div>
+      {types.map((t, i) => (
+        <div key={i}>
+          <Button color={t} link>&lt;Button color="{t}" link /&gt;</Button>
+        </div>
+      ))}
     </div>
   ))
   .add('all the sizes, type="info"', () => (
     <div>
       <div key={1}>
-        <Button size="small" type="info">{'size="small"'}</Button>
+        <Button size="small" color="info">{'size="small"'}</Button>
       </div>
 
       <div key={2}>
-        <Button size="default" type="info">{'size="default"'}</Button>
+        <Button size="default" color="info">{'size="default"'}</Button>
       </div>
 
       <div key={3}>
-        <Button size="large" type="info">{'size="large"'}</Button>
+        <Button size="large" color="info">{'size="large"'}</Button>
       </div>
     </div>
   ))
